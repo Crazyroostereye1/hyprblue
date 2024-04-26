@@ -77,10 +77,9 @@ modules:
       - system-config-printer
       - waybar
       - wl-clipboard
-      
+      - neovim
+      - gnome-software
     remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
@@ -104,8 +103,17 @@ modules:
   - type: systemd
     system: 
       enable: 
+        - create-sddm-user.service
         - tailscaled.service
         - sddm.service
-        - create-sddm-user.service
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
+  - type: yafti
+    custom-flatpaks:
+      - WebCord (Discord): io.github.spacingbat3.webcord 
+      - Thunderbird: org.mozilla.Thunderbird
+      - Trayscale: dev.deedles.Trayscale
+      - Chromium: io.github.ungoogled_software.ungoogled_chromium
+      - Steam: com.valvesoftware.Steam
+      - OnlyOffice: org.onlyoffice.desktopeditors
