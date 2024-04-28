@@ -67,18 +67,14 @@ modules:
       - brightnessctl
       - dunst # notification daemon
       - fprintd-pam
-      - gnome-keyring-pam
-      - lxqt-policykit
       - nautilus
-      - pinentry-gnome3
-      - plymouth-system-theme
       - rofi-wayland
       - sddm-wayland-generic # display manager
       - system-config-printer
       - waybar
       - wl-clipboard
       - neovim
-      - gnome-software
+      - polkit-kde
     remove:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
