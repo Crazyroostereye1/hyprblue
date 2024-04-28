@@ -15,6 +15,7 @@ modules:
       - usr: /usr # copies config/files/usr into your image's /usr.
                   # put configuration files you want in /etc/ on a booted system 
                   # in /usr/etc/ in the image. read more in files module reference.
+      - etc: /etc
   - type: rpm-ostree
     remove:
       - xorg-x11-server-Xwayland
@@ -75,6 +76,7 @@ modules:
       - wl-clipboard
       - neovim
       - polkit-kde
+      - wlogout
     remove:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
