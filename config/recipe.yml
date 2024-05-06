@@ -115,12 +115,3 @@ modules:
         - sddm.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
-  - type: yafti
-    custom-flatpaks:
-      - WebCord (Discord): io.github.spacingbat3.webcord 
-      - Thunderbird: org.mozilla.Thunderbird
-      - Trayscale: dev.deedles.Trayscale
-      - Chromium: io.github.ungoogled_software.ungoogled_chromium
-      - Steam: com.valvesoftware.Steam
-      - OnlyOffice: org.onlyoffice.desktopeditors
