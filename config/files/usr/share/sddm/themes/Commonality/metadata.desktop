@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Commonality
+Description=Remembering CDE
+Author=Phobian347
+Copyright=
+License=GPL3
+Type=sddm-theme
+Version=1.1
+Website=https://www.pling.com/u/phob1an
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=phobian@tutanota.com
+Theme-Id=ExposeAir
+Theme-API=2.0
