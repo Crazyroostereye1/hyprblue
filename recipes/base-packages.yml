@@ -70,6 +70,7 @@ modules:
       - kde-connect
       - podman-compose
       - nwg-displays
+      - stow
     remove:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
