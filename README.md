@@ -1,9 +1,5 @@
 [![bluebuild](https://github.com/Crazyroostereye1/hyprblue/actions/workflows/build.yml/badge.svg)](https://github.com/Crazyroostereye1/hyprblue/actions/workflows/build.yml)
-# BlueBuild Template &nbsp; 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
-
+# HyprBlue uBlue
 ## Installation
 
 > **Warning**  
