@@ -8,6 +8,6 @@ modules:
   - type: akmods
     install:
       - framework-laptop
-  - from-file: files.yml
   - from-file: base-packages.yml
+  - from-file: files.yml
   - from-file: services.yml
