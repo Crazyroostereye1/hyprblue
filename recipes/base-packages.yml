@@ -65,6 +65,8 @@ modules:
       - bolt
 
       # other
+      - plasma-workspace
+      - zoxide
       - system-config-printer
       - fastfetch
       - kde-connect
