@@ -1,91 +1,92 @@
-- type: rpm-ostree
-  repos:
-    - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-    - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
-  install:
-    # Hyprland and extras
-    - hyprland
-    - xdg-desktop-portal-hyprland
-    - hyprland-plugins
-    - hyprpaper
-    - hyprpicker
-    - hypridle
-    - hyprshot
-    - swaylock-effects
-    - dunst # notification daemon
-    - rofi-wayland
-    - waybar
-    - wlogout
-
-    # audio
-    - pavucontrol
-    - pipewire
-    - playerctl
-    - wireplumber
-
-    # bluetooth
-    - blueman
-
-    # terminal
-    - kitty # terminal
-    - neovim # tui editor better than nano
-    - zsh # shell
-
-    # networking and VPN
-    - network-manager-applet
-    - NetworkManager-l2tp-gnome
-    - NetworkManager-libreswan-gnome
-    - NetworkManager-openconnect-gnome
-    - NetworkManager-openvpn-gnome
-    - NetworkManager-pptp-gnome
-    - NetworkManager-sstp-gnome
-    - NetworkManager-vpnc-gnome
-    - tailscale
-
-    # qt
-    - qt5-qtwayland
-    - qt6-qtwayland
-    - qt5-qtgraphicaleffects
-    - qt5-qtquickcontrols2
-    - qt5-qtsvg
-    - qt5-qtquickcontrols
-
-    # sddm
-    - sddm-wayland-generic # display manager
-    - sddm-themes
-
-    # Systemtools
-    - brightnessctl
-    - fprintd-pam
-    - nautilus
-    - wl-clipboard
-    - polkit-kde
-    - bolt
-
-    # other
-    - system-config-printer
-    - fastfetch
-    - kde-connect
-    - podman-compose
-    - nwg-displays
-  remove:
-    - firefox
-    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
-- type: default-flatpaks
-  notify: true # Send notification after install/uninstall is finished (true/false)
-  system:
-    # If no repo information is specified, Flathub will be used by default
-    repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-    repo-name: flathub
-    repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-%OS_VERSION%/tofik-nwg-shell-fedora-%OS_VERSION%.repo
     install:
-      - org.mozilla.firefox
-      - com.usebottles.bottles
-      - org.mozilla.Thunderbird
-      - io.github.spacingbat3.webcord
-      - io.github.ungoogled_software.ungoogled_chromium
-      - org.remmina.Remmina
-      - com.visualstudio.code
-      - dev.deedles.Trayscale
+      # Hyprland and extras
+      - hyprland
+      - xdg-desktop-portal-hyprland
+      - hyprland-plugins
+      - hyprpaper
+      - hyprpicker
+      - hypridle
+      - hyprshot
+      - swaylock-effects
+      - dunst # notification daemon
+      - rofi-wayland
+      - waybar
+      - wlogout
+
+      # audio
+      - pavucontrol
+      - pipewire
+      - playerctl
+      - wireplumber
+
+      # bluetooth
+      - blueman
+
+      # terminal
+      - kitty # terminal
+      - neovim # tui editor better than nano
+      - zsh # shell
+
+      # networking and VPN
+      - network-manager-applet
+      - NetworkManager-l2tp-gnome
+      - NetworkManager-libreswan-gnome
+      - NetworkManager-openconnect-gnome
+      - NetworkManager-openvpn-gnome
+      - NetworkManager-pptp-gnome
+      - NetworkManager-sstp-gnome
+      - NetworkManager-vpnc-gnome
+      - tailscale
+
+      # qt
+      - qt5-qtwayland
+      - qt6-qtwayland
+      - qt5-qtgraphicaleffects
+      - qt5-qtquickcontrols2
+      - qt5-qtsvg
+      - qt5-qtquickcontrols
+
+      # sddm
+      - sddm-wayland-generic # display manager
+      - sddm-themes
+
+      # Systemtools
+      - brightnessctl
+      - fprintd-pam
+      - nautilus
+      - wl-clipboard
+      - polkit-kde
+      - bolt
+
+      # other
+      - system-config-printer
+      - fastfetch
+      - kde-connect
+      - podman-compose
+      - nwg-displays
+    remove:
+      - firefox
+      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+        - org.mozilla.firefox
+        - com.usebottles.bottles
+        - org.mozilla.Thunderbird
+        - io.github.spacingbat3.webcord
+        - io.github.ungoogled_software.ungoogled_chromium
+        - org.remmina.Remmina
+        - com.visualstudio.code
+        - dev.deedles.Trayscale
