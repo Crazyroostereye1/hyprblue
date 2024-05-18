@@ -6,7 +6,6 @@ image-version: latest
 modules:
   - type: signing
   - type: akmods
-    base: extra
     install:
       - framework-laptop
   - from-file: files.yml
