@@ -9,7 +9,7 @@ modules:
     install:
       - framework-laptop
   
-  - from-file: base-packages.yml
-  - from-file: services.yml
-  - from-file: files.yml
+  - from-file: ./recipes/base-packages.yml
+  - from-file: ./recipes/services.yml
+  - from-file: ./recipes/files.yml
   - type: signing
