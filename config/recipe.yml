@@ -1,4 +1,4 @@
-name: HyprBlue-Base
+name: hyprblue
 description: This is the Base varient of HyprBlue
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest

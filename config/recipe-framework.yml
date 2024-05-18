@@ -1,4 +1,4 @@
-name: HyprBlue-Frmework
+name: hyprblue-framework
 description: This is the Framework varient of HyprBlue
 base-image: ghcr.io/ublue-os/base-main
 image-version: latest
