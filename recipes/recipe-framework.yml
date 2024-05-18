@@ -11,3 +11,4 @@ modules:
   - from-file: base-packages.yml
   - from-file: files.yml
   - from-file: services.yml
+  - from-file: laptop.yml

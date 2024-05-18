@@ -1,0 +1,9 @@
+modules:
+  - type: rpm-ostree
+    install:
+      - powertop
+      - tlp
+  - type: systemd
+    system:
+      enable:
+        - powertop.service
