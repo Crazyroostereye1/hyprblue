@@ -4,7 +4,7 @@ base-image: ghcr.io/ublue-os/base-main
 image-version: latest
 
 modules:
+  - type: signing
   - from-file: files.yml
   - from-file: base-packages.yml
   - from-file: services.yml
-  - type: signing
