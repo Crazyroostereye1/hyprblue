@@ -1,0 +1,10 @@
+name: HyprBlue-Base
+description: This is the Base varient of HyprBlue
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest
+
+modules:
+  - from-file: base-packages.yml
+  - from-file: services.yml
+  - from-file: files.yml
+  - type: signing

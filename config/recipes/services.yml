@@ -1,0 +1,6 @@
+  - type: systemd
+    system: 
+      enable: 
+        - sddm-boot.service
+        - tailscaled.service
+        - sddm.service

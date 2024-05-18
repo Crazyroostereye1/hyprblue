@@ -1,0 +1,9 @@
+- type: files
+  files:
+    - usr:
+        /usr
+    - etc: /etc
+- type: fonts
+  fonts:
+    nerd-fonts:
+      - JetBrainsMono
