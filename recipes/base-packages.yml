@@ -75,6 +75,7 @@ modules:
       - nwg-displays
       - stow
       - code
+      - pipx
     remove:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
