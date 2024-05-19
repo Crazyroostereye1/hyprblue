@@ -65,7 +65,7 @@ modules:
       - bolt
 
       # other
-      - plasma-workspace
+      - ulauncher
       - zoxide
       - system-config-printer
       - fastfetch
